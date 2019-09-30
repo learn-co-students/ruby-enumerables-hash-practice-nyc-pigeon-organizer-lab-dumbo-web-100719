@@ -1,12 +1,17 @@
-
 def nyc_pigeon_organizer(data)
-  sorted_hash = Hash.new 
+  Hash.new = sorted_hash
     data.each do |key, value|
+      if data.has_key?(:color) && data(:color).has_key? 
+        sorted_hash = key
     sorted_hash << data[key]
-end
+    end
+       end
+      end
   sorted_hash
 end
 
 
-if structure.has_key?(:a) && structure[:a].has_key?(:b) then
-  value = structure[:a][:b]
+# if structure.has_key?(:a) && structure[:a].has_key?(:b) then
+#   value = structure[:a][:b]
+
+
