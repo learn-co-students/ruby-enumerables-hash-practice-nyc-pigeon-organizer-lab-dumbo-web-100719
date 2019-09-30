@@ -3,7 +3,7 @@ def nyc_pigeon_organizer(data)
   Hash.new = sorted_hash
 #iterate through original hash
     data.each do |key, value|
-#extract names (need help on this - how to just grab all bottom level values )
+#extract names (need help on this - how to just grab all bottom level values?)
       if data.has_value?
 # put names in new hash
         sorted_hash = key
