@@ -21,7 +21,7 @@ def nyc_pigeon_organizer(data)
     value.each do |new_value, names|
       names.each do |name|
        new_hash[name]= {}
-       new_hash[name]= value[key]
+       new_hash[name]= value[new_value]
         binding.pry
       end
     end
