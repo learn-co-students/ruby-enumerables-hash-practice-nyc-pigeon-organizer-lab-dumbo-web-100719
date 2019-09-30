@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
   data.each do |key, value|
     value.each do |new_value, names|
       names.each do |name|
-       new_hash[name]= new_value
+       new_hash[name]= {}
         binding.pry
       end
     end
@@ -34,5 +34,7 @@ end
 #h1 = {:a => :A, :b => :B, :c => :C, :d => :D}
 # h2 = h1.select {|key, value| [:b, :d, :e, :f].include?(key) } # => {:b=>:B, :d=>:D} 
 # h1 = Hash[h1.to_a - h2.to_a]
+
+
 
 
