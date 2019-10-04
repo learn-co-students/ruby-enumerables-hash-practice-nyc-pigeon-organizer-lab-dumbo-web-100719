@@ -1,4 +1,4 @@
-def nyc_pigeon_organizer2(data)
+def nyc_pigeon_organizer(data)
   new_hash= {}
 
   data.each do |key, value|
@@ -8,7 +8,7 @@ def nyc_pigeon_organizer2(data)
        if new_hash[single_name]? nil : new_hash[single_name]= {}
         end
       #new_hash[single_name][key] ||= []
-        new_hash[single_name][key]? nil : new_hash[single_name][key]=[]
+      if new_hash[single_name][key]? nil : new_hash[single_name][key]=[]
         end
       new_hash[single_name][key].push(label.to_s)
       end
